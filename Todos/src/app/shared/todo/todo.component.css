@@ -1,0 +1,19 @@
+.todo-container{
+  background-color: rgb(119, 133, 158);
+  height: 100px;
+  width: 200px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.todo-title {
+  line-height: 0px;
+}
+
+.remove-button {
+  cursor: pointer;
+}

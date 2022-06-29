@@ -1,0 +1,20 @@
+<div>
+
+  <h2>{{title}}</h2>
+
+  <div>
+    <input class="todo-input" type="text" [(ngModel)]="newTodoTitle">
+    <button (click)="addTodo()">Create</button>
+  </div>
+
+  <div >
+    <todo 
+      *ngFor="let todo of todos"
+      [todoTitle]="todo"
+      [index]="todos.indexOf(todo)"
+      (removeTodoEvent)="removeTodo($event)"
+      >
+    </todo>
+    
+  </div>
+</div>
